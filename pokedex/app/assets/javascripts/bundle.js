@@ -168,13 +168,17 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, this.props.pokemon.map(function (poke) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "header"
+      }, "Gotta catch 'em all!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "poke-idx"
+      }, this.props.pokemon.map(function (poke) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           key: poke.id
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           src: poke.image_url
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, poke.name));
-      }));
+      })));
     }
   }]);
 
