@@ -291,11 +291,13 @@ function (_React$Component) {
       if (!this.props.items[0]) return null;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "pokemon-view"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, currentPoke.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, currentPoke.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "stats"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Attack: ", currentPoke.attack), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Defense: ", currentPoke.defense), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Type: ", currentPoke.poke_type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Moves: ", currentPoke.moves.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "pokemon-img"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: currentPoke.image_url
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Stats:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Attack: ", currentPoke.attack), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Defense: ", currentPoke.defense), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Type: ", currentPoke.poke_type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Moves: ", currentPoke.moves.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Items:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Items:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "pokemon-items"
       }, this.props.items.map(function (item) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_items_item__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -417,9 +419,7 @@ function (_React$Component) {
           pokemon: poke
         });
       });
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "/"
-      }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index-view"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "pokedex"

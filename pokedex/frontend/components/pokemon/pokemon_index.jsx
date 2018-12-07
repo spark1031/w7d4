@@ -13,7 +13,6 @@ export default class PokemonIndex extends React.Component {
     const pokemonItems = this.props.pokemon.map(poke => <PokemonIndexItem key={poke.id} pokemon={poke} />);
     return(
       <div>
-        <Link to='/'>Home</Link>
         <div className="index-view">
           <section className="pokedex">
             <ul className="poke-idx">

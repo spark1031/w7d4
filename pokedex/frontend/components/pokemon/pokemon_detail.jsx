@@ -24,16 +24,15 @@ export default class PokemonDetail extends React.Component {
     return(
       <div className="pokemon-view">
         <h1>{currentPoke.name}</h1>
-        <div className="pokemon-img">
-          <img src={currentPoke.image_url} />
-        </div>
-        <ul>
-          <p><strong>Stats:</strong></p>
+        <ul className="stats">
           <li>Attack: {currentPoke.attack}</li>
           <li>Defense: {currentPoke.defense}</li>
           <li>Type: {currentPoke.poke_type}</li>
           <li>Moves: {currentPoke.moves.join(", ")}</li>
         </ul>
+        <div className="pokemon-img">
+          <img src={currentPoke.image_url} />
+        </div>
         <h1>Items:</h1>
         <section className="pokemon-items">
           {this.props.items.map(item => <Item key={item.name} item={item} /> )}

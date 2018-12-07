@@ -10,14 +10,15 @@
     <script type="text/javascript">
       window.POKEMON_TYPES = <%=raw Pokemon::TYPES %>
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <img src ="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-text-png-1428-1390.png" />
+        <a href="/"><img src ="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-text-png-1428-1390.png" /></a>
     </header>
     <section class="logo">
-      <img src="http://rs223.pbsrc.com/albums/dd171/morixlux/Pikachu_plays.gif~c200" alt="pokedex">
+      <a href="/"><img src="http://rs223.pbsrc.com/albums/dd171/morixlux/Pikachu_plays.gif~c200" alt="pokedex"></a>
     </section>
     <%= yield %>
   </body>

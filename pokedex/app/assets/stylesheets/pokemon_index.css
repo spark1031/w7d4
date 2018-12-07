@@ -39,6 +39,10 @@
   margin: 0 auto;
   padding: 10px;
   width: 60%;
+  position: fixed;
+  left: 30%;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .pokemon-view h1 {
@@ -58,13 +62,14 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  height: 150px;
 }
 
 .pokemon-items {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .poke-item p {
@@ -73,6 +78,23 @@
 
 .item-view ul {
   list-style: none;
+}
+
+.poke-item img {
+  height: 50px;
+}
+
+.poke-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
